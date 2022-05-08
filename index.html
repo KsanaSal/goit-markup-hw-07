@@ -15,8 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./sass/main.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--header site web studio-->
@@ -551,23 +550,23 @@
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="close-modal" type="button">
-          <svg class="icon-close-modal">
+        <button data-modal-close class="close-button" type="button">
+          <svg class="close-button__icon">
             <use href="./images/sprite-icons.svg#icon-close-modal"></use>
           </svg>
         </button>
 
         <form class="modal-form" name="form-order">
-          <div class="data-user">
+          <div class="form-user">
             <div class="form-order">
-              <h2 class="title-order">
+              <h2 class="form-order__title">
                 Оставьте свои данные, мы вам перезвоним
               </h2>
               <div class="form-field">
-                <label for="name">Имя</label>
-                <div class="input-wrap">
-                  <input type="text" name="name-user" id="name" />
-                  <svg class="icon-form">
+                <label class="form-field__label" for="name">Имя</label>
+                <div class="form-field__wrap">
+                  <input class="form-field__input" type="text" name="name-user" id="name" />
+                  <svg class="form-field__icon">
                     <use
                       href="./images/sprite-icons.svg#icon-person-black"
                     ></use>
@@ -576,10 +575,10 @@
               </div>
 
               <div class="form-field">
-                <label for="tel">Телефон</label>
-                <div class="input-wrap">
-                  <input type="tel" name="tel-user" id="tel" />
-                  <svg class="icon-form">
+                <label class="form-field__label" for="tel">Телефон</label>
+                <div class="form-field__wrap">
+                  <input class="form-field__input" type="tel" name="tel-user" id="tel" />
+                  <svg class="form-field__icon">
                     <use
                       href="./images/sprite-icons.svg#icon-phone-black"
                     ></use>
@@ -588,10 +587,10 @@
               </div>
 
               <div class="form-field">
-                <label for="email">Почта</label>
-                <div class="input-wrap">
-                  <input type="email" name="email-person" id="email" />
-                  <svg class="icon-form">
+                <label class="form-field__label" for="email">Почта</label>
+                <div class="form-field__wrap">
+                  <input class="form-field__input" type="email" name="email-person" id="email" />
+                  <svg class="form-field__icon">
                     <use
                       href="./images/sprite-icons.svg#icon-email-black"
                     ></use>
@@ -600,9 +599,9 @@
               </div>
 
               <div class="form-field">
-                <label for="comment">Комментарий</label>
+                <label class="form-field__label" for="comment">Комментарий</label>
                 <textarea
-                  class="comment-user"
+                  class="form-field__comment"
                   name="comment"
                   id="comment"
                   cols="30"
@@ -613,17 +612,17 @@
             </div>
             <label class="accept-rule">
               <input
-                class="checkbox"
+                class="accept-rule__checkbox"
                 type="checkbox"
                 name="rules"
                 value="accept rules"
               />
-              <span class="icon-checkbox"></span>
-              <svg class="icon-check">
+              <span class="accept-rule__icon-box"></span>
+              <svg class="accept-rule__icon-check">
                 <use href="./images/sprite-icons.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю
-              <a class="contract" href="#">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю &nbsp
+              <a class="accept-rule__contract" href="#">Условия договора</a>
             </label>
             <button class="button button--center" type="submit">Отправить</button>
           </div>
