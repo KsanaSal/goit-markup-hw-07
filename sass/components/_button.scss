@@ -23,19 +23,15 @@
 
     transition: background-color 250ms $timing-function;
 
-    &--center {
-        margin: 0 auto;
-    }
-
     &:hover,
     &:focus {
         background-color: $accent-hover-background-color;
     }
+}
 
-    &__icon {
-        margin-left: 10px;
-        width: 24px;
-        height: 24px;
-        fill: $light-color-text;
-    }
+.button__icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $light-color-text;
 }

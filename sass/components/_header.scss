@@ -1,10 +1,10 @@
 .header {
     border-bottom: 1px solid $lightdark-background-color;
-}
 
-.header-nav {
-    display: flex;
-    align-items: center;
+    &__conteiner {
+        display: flex;
+        align-items: center;
+    }
 }
 
 // navigation
@@ -18,44 +18,44 @@
     &__item:not(:last-child) {
         margin-right: 50px;
     }
+}
 
-    &__link {
-        position: relative;
+.nav-site__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $medium-dark-color-text;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color-text;
+    }
+
+    &--current {
+        color: $accent-color-text;
+    }
+
+    &--current::after {
+        content: "";
+
         display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
 
-        color: $medium-dark-color-text;
-
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
-
-        transition: color 250ms $timing-function;
-
-        &:hover,
-        &:focus {
-            color: $accent-color-text;
-        }
-
-        &--current {
-            color: $accent-color-text;
-        }
-
-        &--current::after {
-            content: "";
-
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: -1px;
-
-            width: 100%;
-            height: 4px;
-            background-color: $accent-background-color;
-            border-radius: 2px;
-        }
+        width: 100%;
+        height: 4px;
+        background-color: $accent-background-color;
+        border-radius: 2px;
     }
 }
 
@@ -67,39 +67,39 @@
     &__item:not(:last-child) {
         margin-right: 50px;
     }
+}
 
-    &__link {
-        display: flex;
-        align-items: center;
+.contact__link {
+    display: flex;
+    align-items: center;
 
-        color: $medium-light-color-text;
+    color: $medium-light-color-text;
 
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
 
-        transition: color 250ms $timing-function;
+    transition: color 250ms $timing-function;
 
-        &:hover,
-        &:focus {
-            color: $accent-color-text;
-        }
+    &:hover,
+    &:focus {
+        color: $accent-color-text;
+    }
 
-        &-icon-mail {
-            width: 16px;
-            height: 12px;
-            margin-right: 10px;
+    &-icon-mail {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
 
-            fill: currentColor;
-        }
+        fill: currentColor;
+    }
 
-        &-icon-phone {
-            width: 10px;
-            height: 16px;
-            margin-right: 10px;
+    &-icon-phone {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
 
-            fill: currentColor;
-        }
+        fill: currentColor;
     }
 }

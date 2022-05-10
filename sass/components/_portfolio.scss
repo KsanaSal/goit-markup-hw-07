@@ -16,73 +16,73 @@
     &:nth-last-child(-n + 3) {
         margin-bottom: 0;
     }
+}
 
-    &__link {
-        display: block;
+.card__link {
+    display: block;
 
-        &:hover,
-        &:focus {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-            .card__overlay {
-                transform: translateY(0);
-            }
+        .card__overlay {
+            transform: translateY(0);
         }
     }
+}
 
-    &__img {
-        position: relative;
-        overflow: hidden;
-    }
+.card__wrap {
+    position: relative;
+    overflow: hidden;
+}
 
-    &__overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $accent-card-bg-color;
+.card__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-card-bg-color;
 
-        transform: translateY(101%);
-        transition: transform 250ms $timing-function;
-    }
+    transform: translateY(101%);
+    transition: transform 250ms $timing-function;
+}
 
-    &__desc {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 63px 24px;
-        width: 100%;
-        height: 100%;
+.card__desc {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
 
-        font-size: 18px;
-        line-height: 1.556;
-        color: $light-color-text;
-    }
+    font-size: 18px;
+    line-height: 1.556;
+    color: $light-color-text;
+}
 
-    &__body {
-        padding: 20px 24px;
-        border: 1px solid $lightmid-background-color;
-    }
+.card__body {
+    padding: 20px 24px;
+    border: 1px solid $lightmid-background-color;
+}
 
-    &__title {
-        margin-bottom: 4px;
+.card__title {
+    margin-bottom: 4px;
 
-        color: $medium-dark-color-text;
+    color: $medium-dark-color-text;
 
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-    }
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
 
-    &__text {
-        color: $medium-light-color-text;
+.card__text {
+    color: $medium-light-color-text;
 
-        font-size: 16px;
-        line-height: 1.875;
-    }
+    font-size: 16px;
+    line-height: 1.875;
 }
